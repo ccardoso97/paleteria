@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/ccardoso97/paleteria#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "node": "^17.7.2",
+    "node": "^17.7.2"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
