@@ -12,14 +12,14 @@ const paletas = [
     id: 1,
     sabor: "Morango com Leite",
     descricao: "Deliciosa paleta de morango com leite",
-    foto: "https://i1.wp.com/lospaleteros.com.br/wp-content/uploads/2016/04/MORANGO-COM-LEITE-CONDENSADO.png?fit=1342%2C1346&ssl=1",
+    foto: "./assets/images/morango-com-leite-condensado.png",
     preco: 10.0,
   },
   {
     id: 2,
-    sabor: "Chocolate com morango",
-    descricao: "Deliciosa paleta de Chocolate com morango",
-    foto: "https://media.cotabest.com.br/media/sku/paleta-mexicana-de-chocolate-com-morango-unidade-los-los-un.png",
+    sabor: "Chocolate Branco",
+    descricao: "Deliciosa paleta de Chocolate Branco",
+    foto: "./assets/images/chocolate-branco.png",
     preco: 8.0,
   },
   {
