@@ -10,13 +10,15 @@ async function findAllPaletas() {
         <div class="PaletaListaItem">
             <div class="PaletaCardItem">
                 <div class="PaletaListaItem__sabor">${paleta.sabor}</div>
-                <div class="PaletaListaItem__preco">${paleta.preco}</div>
+                <div class="PaletaListaItem__preco">R$${paleta.preco.toFixed(2)}</div>
                 <div class="PaletaListaItem__descricao">${paleta.descricao}</div>
             </div>
-            <img src=${paleta.foto}
+        </div>   
+        <img 
+            src=${paleta.foto}
             alt=${`Paleta de ${paleta.foto}`}
-            class="PaletaListaItem_foto">
-        </div>    
+            class="PaletaListaItem_foto"
+        />
         `
     )
   });

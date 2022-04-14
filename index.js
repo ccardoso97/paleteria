@@ -26,7 +26,7 @@ const paletas = [
     id: 3,
     sabor: "Açaí com leite condensado",
     descricao: "Açaí com leite condensado",
-    foto: "http://napoleta.com.br/parts/recheado/acaicomleitecondensado.png",
+    foto: "./assets/images/acai-com-leite-condensado.png",
     preco: 11.0,
   },
 ];
