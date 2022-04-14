@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body,
 html {
@@ -11,13 +11,13 @@ html {
   font-family: sans-serif;
 }
 
-.Home {
+.home {
   position: relative;
   background-image: radial-gradient(
     farthest-corner at 40px 40px,
-    #50c5ee 60%,
-    rgba(0, 212, 255, 0.5) 100%
-  );
+    #9652c4 60%,
+    rgba(53, 21, 83, 0.5) 100%
+);
   min-height: calc(100vh - 60px);
   margin: 15px;
   padding: 15px;
@@ -26,26 +26,26 @@ html {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
-.Home > h2 {
+.home > h2 {
   display: flex;
   justify-content: space-around;
   color: rgb(0, 0, 0);
 }
 
-.Home > div {
+.home > div {
   display: flex;
   justify-content: center;
   color: rgb(0, 0, 0);
 }
 
-.Home__container {
+.home__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 @media (max-width: 350px) {
-  .Home__container {
+  .home__container {
     justify-content: unset;
   }
 }
@@ -70,7 +70,7 @@ html {
 
 .PaletaCardItem,
 .PaletaListaItem {
-  font-family: 'Exo';
+  font-family: 'Rubik';
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 10px;
@@ -120,4 +120,44 @@ html {
 .PaletaListaItem__foto {
   height: 150px;
   margin-right: -60px;
+}
+
+.paleta-escolhida-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#idPaleta {
+  padding: 0.5rem;
+  width: 315px;
+  border: none;
+  border-radius: 1rem;
+}
+
+#idPaletaButton {
+  background-color: #4d3685;
+  border: 2px solid #9400d3;
+  padding: 0.4rem;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 1rem;
+  width: 330px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+#idPaletaButton:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+#paleta-escolhida-input-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
