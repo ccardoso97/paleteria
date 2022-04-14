@@ -8,7 +8,7 @@ async function findAllPaletas() {
       "beforeend",
       `
         <div class="PaletaListaItem">
-            <div class="PaletaCardItem">
+            <div>
                 <div class="PaletaListaItem__sabor">${paleta.sabor}</div>
                 <div class="PaletaListaItem__preco">R$${paleta.preco.toFixed(
                   2
