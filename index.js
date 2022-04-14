@@ -1,7 +1,9 @@
 const express = require("express");
+const cors = require("cors");
+
 const port = 3000;
 const app = express();
-const cors = require("cors");
+
 app.use(cors());
 app.use(express.json());
 
@@ -30,7 +32,7 @@ const paletas = [
 ];
 
 app.get("/", function (req, res) {
-  res.send("Módulo 3 Fullstack");
+  res.render(paletas);
 });
 app.get("/paletas/find-paletas", (req, res) => {
   res.send(paletas);
