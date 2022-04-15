@@ -50,4 +50,5 @@ module.exports = {
   createPaletaService,
   updatePaletaService,
   deletePaletaService,
-};
+  paletas
+}
