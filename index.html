@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O Geladão</title>
-    <link rel="stylesheet" href="/style.css"/>
-</head>
-<body>
-    <div class="home"> 
-        <div class="home__header Header">
-            <div class="row">
-              <div class="Header__logo Logo">
-                <img
-                  src="./assets/images/pngwing.com.png"
-                  width="70px"
-                  alt="Logo El Geladon"
-                  class="Logo__icone"
-                />
-                <span class="Logo__titulo"> O Geladão </span>
-              </div>
-    
-              <div class="Header__opcoes Opcoes">
-                <div class="Opcoes__sacola Sacola">
-                  <img
-                    src="./assets/images/sacola.svg"
-                    width="40px"
-                    class="Sacola__icone"
-                    alt="Sacola de compras"
-                  />
-                </div>
-              </div>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="home__header Header">
+        <div class="row">
+          <div class="Header__logo Logo">
+            <img
+              src="./assets/images/pngwing.com.png"
+              width="70px"
+              alt="Logo El Geladon"
+              class="Logo__icone"
+            />
+            <span class="Logo__titulo"> O Geladão </span>
+          </div>
+
+          <div class="Header__opcoes Opcoes">
+            <div class="Opcoes__sacola Sacola">
+              <img
+                src="./assets/images/sacola.svg"
+                width="40px"
+                class="Sacola__icone"
+                alt="Sacola de compras"
+              />
             </div>
           </div>
-        <h2>Pesquisar Paleta</h2>
-        <div class="paleta-escolhida-espaco">
-            <div id="paleta-escolhida-input-espaco">
-                <input type="number" id="idPaleta" placeholder="Digite o ID da Paleta e clique em Escolher">
-                <button id="idPaletaButton" onclick="findByIdPaletas()">ESCOLHER</button>
-            </div>
-        <div class="paletaEscolhida"></div>
         </div>
+      </div>
+      <h2>Pesquisar Paleta</h2>
+      <div class="paleta-escolhida-espaco">
+        <div id="paleta-escolhida-input-espaco">
+          <input
+            type="number"
+            id="idPaleta"
+            placeholder="Digite o ID da Paleta e clique em Escolher"
+          />
+          <button id="idPaletaButton" onclick="findByIdPaletas()">
+            ESCOLHER
+          </button>
+        </div>
+        <div class="paletaEscolhida"></div>
+      </div>
 
-        <h2>Paletas Disponíveis</h2>
-    <div class="home__container">
+      <h2>Paletas Disponíveis</h2>
+      <div class="home__container">
         <div class="PaletaLista" id="paletaList"></div>
-    </div>
+      </div>
     </div>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>

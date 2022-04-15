@@ -17,7 +17,7 @@ html {
     farthest-corner at 40px 40px,
     #9652c4 60%,
     rgba(53, 21, 83, 0.5) 100%
-);
+  );
   min-height: calc(100vh - 60px);
   margin: 15px;
   padding: 15px;
@@ -187,7 +187,7 @@ html {
 .Logo__titulo {
   position: absolute;
   left: 55px;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   font-weight: 700;
   font-size: 2.5em;
 }
