@@ -56,16 +56,15 @@
           Cadastrar Paleta
         </button>
       </section>
-
       <section class="modal-overlay" id="overlay">
         <div class="modal">
           <div class="modal-header">
             <h2>Cadastrar uma paleta</h2>
             <a onclick="fecharModalCadastro()" class="close-modal">x</a>
           </div>
-
           <div class="modal-body">
             <div>
+              <input type="hidden" id="id" >
               <input
                 type="text"
                 name="sabor"
@@ -98,12 +97,25 @@
           </div>
         </div>
       </section>
-
       <h2>Paletas Disponíveis</h2>
-
       <div class="Home__container">
         <div class="PaletaLista" id="paletaList"></div>
       </div>
+      <section class="modal-overlay" id="overlay-delete">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="title-header-modal">Confirmação de deleção</h2>
+                <a onclick="fecharModalDelete()" class="close-modal">x</a>
+            </div>
+            <div class="modal-body-delete">
+                <p>Deseja realmente apagar essa paleta?</p>
+                <div class="btns_delete">
+                    <button class="btn_delete_no btn_delete" onclick="fecharModalDelete()">Não</button>
+                    <button class="btn_delete_yes btn_delete">Sim</button>
+                </div>
+            </div>
+        </div>
+    </section>    
     </div>
     <script src="script.js"></script>
   </body>
