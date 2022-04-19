@@ -171,7 +171,6 @@ async function deletePaleta(id) {
 
   document.getElementById('paletaList').innerHTML = '';
 
-fecharModalDelete();
-findAllPaletas();
+  fecharModalDelete();
+  findAllPaletas();
 }
-

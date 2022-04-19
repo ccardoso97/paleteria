@@ -48,11 +48,7 @@
         <div id="paletaEscolhida"></div>
       </div>
       <section class="button-modal-create">
-        <button
-          type="button"
-          id="createPaletaButton"
-          onclick="abrirModal()"
-        >
+        <button type="button" id="createPaletaButton" onclick="abrirModal()">
           Cadastrar Paleta
         </button>
       </section>
@@ -64,7 +60,7 @@
           </div>
           <div class="modal-body">
             <div>
-              <input type="hidden" id="id" >
+              <input type="hidden" id="id" />
               <input
                 type="text"
                 name="sabor"
@@ -90,7 +86,11 @@
                 id="foto"
                 placeholder="Link da Foto da Paleta"
               />
-              <button class="default-button" id="button-form-modal" onclick="createPaleta()">
+              <button
+                class="default-button"
+                id="button-form-modal"
+                onclick="createPaleta()"
+              >
                 Cadastrar
               </button>
             </div>
@@ -103,19 +103,21 @@
       </div>
       <section class="modal-overlay" id="overlay-delete">
         <div class="modal">
-            <div class="modal-header">
-                <h2 id="title-header-modal">Confirmação de deleção</h2>
-                <a onclick="fecharModalDelete()" class="close-modal">x</a>
+          <div class="modal-header">
+            <h2 id="title-header-modal">Confirmação de deleção</h2>
+            <a onclick="fecharModalDelete()" class="close-modal">x</a>
+          </div>
+          <div class="modal-body-delete">
+            <p>Deseja realmente apagar essa paleta?</p>
+            <div class="btns_delete">
+              <button class="btn_delete_no" onclick="fecharModalDelete()">
+                Não
+              </button>
+              <button class="btn_delete_yes">Sim</button>
             </div>
-            <div class="modal-body-delete">
-                <p>Deseja realmente apagar essa paleta?</p>
-                <div class="btns_delete">
-                    <button class="btn_delete_no" onclick="fecharModalDelete()">Não</button>
-                    <button class="btn_delete_yes">Sim</button>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>    
+      </section>
     </div>
     <script src="script.js"></script>
   </body>
