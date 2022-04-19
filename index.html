@@ -51,7 +51,7 @@
         <button
           type="button"
           id="createPaletaButton"
-          onclick="abrirModalCadastro()"
+          onclick="abrirModal()"
         >
           Cadastrar Paleta
         </button>
@@ -59,8 +59,8 @@
       <section class="modal-overlay" id="overlay">
         <div class="modal">
           <div class="modal-header">
-            <h2>Cadastrar uma paleta</h2>
-            <a onclick="fecharModalCadastro()" class="close-modal">x</a>
+            <h2 id="title-header-modal">Cadastrar uma paleta</h2>
+            <a onclick="fecharModal()" class="close-modal">x</a>
           </div>
           <div class="modal-body">
             <div>
@@ -90,7 +90,7 @@
                 id="foto"
                 placeholder="Link da Foto da Paleta"
               />
-              <button class="default-button" onclick="createPaleta()">
+              <button class="default-button" id="button-form-modal" onclick="createPaleta()">
                 Cadastrar
               </button>
             </div>
@@ -110,8 +110,8 @@
             <div class="modal-body-delete">
                 <p>Deseja realmente apagar essa paleta?</p>
                 <div class="btns_delete">
-                    <button class="btn_delete_no btn_delete" onclick="fecharModalDelete()">Não</button>
-                    <button class="btn_delete_yes btn_delete">Sim</button>
+                    <button class="btn_delete_no" onclick="fecharModalDelete()">Não</button>
+                    <button class="btn_delete_yes">Sim</button>
                 </div>
             </div>
         </div>

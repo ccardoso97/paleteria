@@ -66,7 +66,7 @@ async function abrirModal(id = null) {
       'Atualizar uma Paleta';
     document.querySelector('#button-form-modal').innerText = 'Atualizar';
 
-    const response = await fetch(`${baseUrl}/paleta/${id}`);
+    const response = await fetch(`${baseUrl}/find-paletas/${id}`);
     const paleta = await response.json();
 
     document.querySelector('#sabor').value = paleta.sabor;
@@ -144,7 +144,6 @@ async function createPaleta() {
 
   fecharModal();
 }
-
 function abrirModalDelete(id) {
   document.querySelector('#overlay-delete').style.display = 'flex';
 
