@@ -1,2 +1,0 @@
-# paleteria
-Projeto paleteria
